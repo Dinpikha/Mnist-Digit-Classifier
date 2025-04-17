@@ -48,30 +48,6 @@ To run this project locally, follow these steps:
 
     This will load the MNIST dataset, preprocess it, train the CNN model, and save the trained model to a file (`mnist_model.keras`).
 
-2. **Evaluate the model:**
-
-    ```bash
-    python evaluate_model.py
-    ```
-
-    This will load the saved model and display a plot of the training and validation accuracy over the epochs.
-
-3. **Make Predictions:**
-
-    Once the model is trained, you can load it and make predictions on new images:
-    
-    ```python
-    from tensorflow.keras.models import load_model
-    import numpy as np
-    import matplotlib.pyplot as plt
-    
-    model = load_model('mnist_model.keras')
-    # Assuming new_image is preprocessed and ready
-    predictions = model.predict(new_image)  # Example: new_image should be reshaped (1, 28, 28, 1)
-    predicted_label = np.argmax(predictions, axis=1)
-    print("Predicted Label: ", predicted_label)
-    ```
-
 ## Model Architecture
 
 The model consists of the following layers:
