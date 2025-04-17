@@ -10,7 +10,6 @@ This project is a Convolutional Neural Network (CNN) model built and trained to 
 - [Usage](#usage)
 - [Model Architecture](#model-architecture)
 - [Training Results](#training-results)
--
 
 ## Project Overview
 
